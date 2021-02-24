@@ -32,6 +32,70 @@
 #define	MLX_H
 
 
+#define MLX_KeyPress              2
+#define MLX_KeyRelease            3
+#define MLX_ButtonPress           4
+#define MLX_ButtonRelease         5
+#define MLX_MotionNotify          6
+#define MLX_EnterNotify           7
+#define MLX_LeaveNotify           8
+#define MLX_FocusIn               9
+#define MLX_FocusOut              10
+#define MLX_KeymapNotify          11
+#define MLX_Expose                12
+#define MLX_GraphicsExpose        13
+#define MLX_NoExpose              14
+#define MLX_VisibilityNotify      15
+#define MLX_CreateNotify          16
+#define MLX_DestroyNotify         17
+#define MLX_UnmapNotify           18
+#define MLX_MapNotify             19
+#define MLX_MapRequest            20
+#define MLX_ReparentNotify        21
+#define MLX_ConfigureNotify       22
+#define MLX_ConfigureRequest      23
+#define MLX_GravityNotify         24
+#define MLX_ResizeRequest         25
+#define MLX_CirculateNotify       26
+#define MLX_CirculateRequest      27
+#define MLX_PropertyNotify        28
+#define MLX_SelectionClear        29
+#define MLX_SelectionRequest      30
+#define MLX_SelectionNotify       31
+#define MLX_ColormapNotify        32
+#define MLX_ClientMessage         33
+#define MLX_MappingNotify         34
+#define MLX_GenericEvent          35
+#define MLX_LASTEvent             36
+
+
+#define MLX_KeyPressMask                (1L<<0)
+#define MLX_KeyReleaseMask              (1L<<1)
+#define MLX_ButtonPressMask             (1L<<2)
+#define MLX_ButtonReleaseMask           (1L<<3)
+#define MLX_EnterWindowMask             (1L<<4)
+#define MLX_LeaveWindowMask             (1L<<5)
+#define MLX_PointerMotionMask           (1L<<6)
+#define MLX_PointerMotionHintMask       (1L<<7)
+#define MLX_Button1MotionMask           (1L<<8)
+#define MLX_Button2MotionMask           (1L<<9)
+#define MLX_Button3MotionMask           (1L<<10)
+#define MLX_Button4MotionMask           (1L<<11)
+#define MLX_Button5MotionMask           (1L<<12)
+#define MLX_ButtonMotionMask            (1L<<13)
+#define MLX_KeymapStateMask             (1L<<14)
+#define MLX_ExposureMask                (1L<<15)
+#define MLX_VisibilityChangeMask        (1L<<16)
+#define MLX_StructureNotifyMask         (1L<<17)
+#define MLX_ResizeRedirectMask          (1L<<18)
+#define MLX_SubstructureNotifyMask      (1L<<19)
+#define MLX_SubstructureRedirectMask    (1L<<20)
+#define MLX_FocusChangeMask             (1L<<21)
+#define MLX_PropertyChangeMask          (1L<<22)
+#define MLX_ColormapChangeMask          (1L<<23)
+#define MLX_OwnerGrabButtonMask         (1L<<24)
+
+
 void	*mlx_init();
 /*
 **  needed before everything else.
